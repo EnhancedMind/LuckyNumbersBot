@@ -1,0 +1,23 @@
+{
+  "name": "luckynumbersbot",
+  "version": "0.1.0",
+  "description": "Discord bot that reacts to specified numbers and their sums in messages",
+  "main": "src/main.js",
+  "author": "EnhancedMind",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/EnhancedMind/LuckyNumbersBot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnhancedMind/LuckyNumbersBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EnhancedMind/LuckyNumbersBot/issues"
+  },
+  "scripts": {
+    "start": "node src/main.js --trace-warnings --trace-deprecation",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}

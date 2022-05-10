@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+howto.md
+.gitattributes
+src/notes.md
+test.js
+.vscode/
+config/config.json
