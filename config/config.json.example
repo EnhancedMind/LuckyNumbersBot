@@ -7,13 +7,12 @@
         "status": "online",
         "game": "made by EnhancedMind ❤️"
     },
-    "configResponsePrefix": "n",
     "responseNumber": {
-        "n69": ":ok_hand: Very nice!",
-        "n420": ":ok_hand: Ok"
+        "69": ":ok_hand: Very nice!",
+        "420": ":ok_hand: Ok"
     },
     "responseSum": {
-        "n69": ":ok_hand: **Nice!** All the numbers in your message added up to 69. Congrats!",
-        "n420": ":ok_hand: All the numbers in your message added up to 420. Congrats!"
+        "69": ":ok_hand: **Nice!** All the numbers in your message added up to 69. Congrats!",
+        "420": ":ok_hand: All the numbers in your message added up to 420. Congrats!"
     }
 }

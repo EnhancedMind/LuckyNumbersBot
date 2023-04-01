@@ -1,16 +1,16 @@
 const { MessageEmbed } = require('discord.js');
 
-const { bot: { reply }, configResponsePrefix: prefix, responseNumber, responseSum } = require('../config/config.json');
+const { bot: { reply }, responseNumber, responseSum } = require('../config/config.json');
 
 const numberHandler = async (client, message) => {
     const numbers = message.content.match(/\d+/g);
     if (!numbers) return;
 
     for (const number of numbers) {
-        if (!responseNumber[prefix.concat(number)]) continue;
+        if (!responseNumber[number]) continue;
 
         const charIndex = message.content.indexOf(number);
-        const response = `*\`${message.content.substring(charIndex - 5, charIndex + number.length + 5)}\`* ${responseNumber[prefix.concat(number)]}`;
+        const response = `*\`${message.content.substring(charIndex - 5, charIndex + number.length + 5)}\`* ${responseNumber[number]}`;
         
         if (reply) message.reply(response);
         else message.channel.send(response);
@@ -23,10 +23,10 @@ const numberHandler = async (client, message) => {
     //sum of all numbers
     const sum = numbers.reduce((acc, curr) => acc + Number(curr), 0);
     
-    if (!responseSum[prefix.concat(sum)]) return;
+    if (!responseSum[sum]) return;
 
     const response = {
-        content: responseSum[prefix.concat(sum)],
+        content: responseSum[sum],
         embeds: [ new MessageEmbed()
             .setColor(0x3399FF)
             .setDescription( numbers.map((number, index) => `${index == 0 ? ' ' : '+'} ${number}`).join('\n')  + `\n= **${sum}**`)

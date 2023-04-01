@@ -1,6 +1,6 @@
 {
   "name": "luckynumbersbot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Discord bot that reacts to specified numbers and their sums in messages",
   "main": "src/main.js",
   "author": "EnhancedMind",

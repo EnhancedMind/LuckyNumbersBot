@@ -12,10 +12,8 @@ Basic configuration
 - `STATUS` the status of the bot - online / idle / dnd / invisible  
 - `GAME` the game status the bot will show. can be changed with a command  
   
-- `configResponsePrefix` keep it alone, only for advanced users  
-  
-- `responseNumber` the message that will be sent when message contains a number. starts with `n` due to js limitations  
-- `responseSum` the message that will be sent when message numbers make this sum. starts with `n` due to js limitations  
+- `responseNumber` the message that will be sent when message contains a number  
+- `responseSum` the message that will be sent when message numbers make this sum  
   
 ### Instalation
 To use the project you will need:  

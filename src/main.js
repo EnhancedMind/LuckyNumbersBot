@@ -1,4 +1,4 @@
-const { Client, Intents} = require('discord.js');
+const { Client, Intents } = require('discord.js');
 
 const { bot: { token }, status: { status, game } } = require('../config/config.json');
 const numberHandler = require('./numberHandler');
